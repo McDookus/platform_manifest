@@ -18,7 +18,7 @@
            sync-c="true"
            sync-j="4" />
 
-  <project path="build" name="SlimRoms/android_build" groups="pdk,tradefed" >
+  <project path="Android" name="SlimRoms/McDookus" groups="pdk,tradefed" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="build/blueprint" name="platform/build/blueprint" groups="pdk,tradefed" remote="aosp" />
@@ -425,7 +425,9 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" remote="aosp" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" remote="aosp" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" remote="aosp" />
-
+  <project path="kernel/McDookus/MOTOe4BST" name="McDookus/kernel-msm" remote="github" revision="turd.1.0.1" />
+  <project path="device/McDookus/MOTOe4BST" name="McDookus/system-core" remote="github" revision="turd.1.0.1" />
+  
  <include name="snippets/slim.xml" />
 
 </manifest>
